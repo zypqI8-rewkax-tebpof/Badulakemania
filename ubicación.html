@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ubicación | Badulakes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="Adicionales/style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Badulakes</div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalgo.html">Catálogo</a></li>
+        <li><a href="contactos.html">Contacto</a></li>
+       <li><a href="ubicación.html"class="active">Ubicación</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BANNER DE UBICACIÓN -->
+  <section class="banner-inicio">
+    <div class="contenido-banner">
+      <h1 class="titulo-banner">¿Dónde estamos?</h1>
+      <p class="subtitulo-banner">¡Visitá nuestra tienda física y llevate tus stickers favoritos!</p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE MAPA Y DETALLES -->
+  <main class="catalogo">
+    <div class="producto">
+      <h3>Dirección</h3>
+      <p>Av. Ejemplo 1234, Asunción, Paraguay</p>
+      <h3>Horarios</h3>
+      <p>Lunes a Sábado: 9:00 - 18:00</p>
+      <h3>Teléfono</h3>
+      <p><a href="https://wa.me/595981188037" target="_blank">+595 981 188 037</a></p>
+      <a href="https://www.google.com/maps?q=-25.2637,-57.5759" target="_blank" class="boton-carrito" style="margin-top: 1rem;">Ver en Google Maps</a>
+    </div>
+
+    <div class="producto">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.0000000000005!2d-57.5759!3d-25.2637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da00000000001%3A0x0000000000000001!2sBadulakes!5e0!3m2!1ses!2spy!4v0000000000000" 
+        width="100%" 
+        height="300" 
+        style="border:4px solid #333; border-radius:16px; box-shadow:6px 6px 0 #333;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+   <div class="footer-redes">
+  <a href="https://www.instagram.com/badulakesmania.py/?hl=en" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+  <a href="https://wa.me/595981188037" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+</div>
+    <p class="footer-creditos">© 2025 Badulakes. Diseñado por Emmanuel Ynsfran.</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="scripts.js"></script>
+  <script src="carrito.js"></script>
+</body>
+</html>

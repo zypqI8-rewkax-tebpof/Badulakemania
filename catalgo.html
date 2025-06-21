@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Stickers</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Badulakes</div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html" class="active">Catálogo</a></li>
+        <li><a href="contactos.html">Contacto</a></li>
+        <li><a href="ubicación.html">Ubicación</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+         </nav>
+  </header>
+
+  <main>
+    <section class="filtros-banner">
+      <div class="filtros">
+        <h2>Filtrar por Categoría</h2>
+        <select id="categoria">
+          <option value="todos">Seleccionar categoría</option>
+          <option value="Animados">Animados</option>
+          <option value="Música">Música</option>
+          <option value="Frases">Frases</option>
+          <option value="Fútbol">Fútbol</option>
+          <option value="Caricaturas">Caricaturas</option>
+        </select>
+
+        <select id="subcategoria" disabled>
+          <option value="todos">Todas las subcategorías</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="catalogo" id="catalogo">
+      <!-- Ejemplo de productos con categorías y subcategorías reales -->
+      <div class="producto" data-categoria="Fútbol" data-subcategoria="Messi" data-nombre="Sticker Messi GOAT" data-precio="2000">
+        <img src="img/stickers/Messi/Messi001.jpg" alt="Sticker Messi" />
+        <h3>Sticker Messi</h3>
+        <p>Gs. 2.000</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-categoria="Música" data-subcategoria="Beyonce" data-nombre="Sticker Beyonce" data-precio="2000">
+        <img src="img/stickers/Beyonce/Beyonce010.jpg" alt="Sticker Beyonce" />
+        <h3>Sticker Beyonce</h3>
+        <p>Gs. 2.000</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-categoria="Animados" data-subcategoria="Rick y Morty" data-nombre="Sticker Rick y Morty" data-precio="2000">
+        <img src="img/stickers/Rick y Morty subidos (110) 27.05/RickMorty009.jpg" alt="Sticker Rick y Morty" />
+        <h3>Sticker Rick y Morty</h3>
+        <p>Gs. 1.000</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-categoria="Frases" data-subcategoria="Motivacionales" data-nombre="Sticker Frase" data-precio="2000">
+        <img src="img/stickers/Frases/SThings003.jpg" alt="Sticker Frase" />
+        <h3>Sticker Frase 1</h3>
+        <p>Gs. 2.000</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-categoria="Caricaturas" data-subcategoria="Bob Esponja" data-nombre="Sticker Bob Esponja" data-precio="2000">
+        <img src="img/stickers/BobEsponja/BobEsponja010.jpg" alt="Sticker Bob Esponja" />
+        <h3>Sticker Bob Esponja</h3>
+        <p>Gs. 2.000</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-redes">
+  <a href="https://www.instagram.com/badulakesmania.py/?hl=en" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+  <a href="https://wa.me/595981188037" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+</div>
+    <p class="footer-creditos">© 2025 Badulakes. Diseñado por Emmanuel Ynsfran.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script src="carrito.js"></script>
+
+  <a href="carrito.html" class="boton-flotante-carrito" id="boton-carrito">
+    🛒 <span id="contador-carrito">0</span>
+  </a>
+</body>
+</html>

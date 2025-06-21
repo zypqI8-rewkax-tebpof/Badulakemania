@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto | Badulakes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="Adicionales/style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Badulakes</div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalgo.html">Catálogo</a></li>
+        <li><a href="contactos.html"class="active">Contacto</a></li>
+       <li><a href="ubicación.html">Ubicación</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BANNER DE CONTACTO -->
+  <section class="banner-inicio">
+    <div class="contenido-banner">
+      <h1 class="titulo-banner">¡Hablemos!</h1>
+      <p class="subtitulo-banner">¿Tenés dudas, ideas o pedidos especiales? ¡Escribinos!</p>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE CONTACTO -->
+  <form onsubmit="enviarWhatsApp(); return false;" class="formulario-contacto">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" required>
+
+  <label for="email">Correo electrónico:</label>
+  <input type="email" id="email" required>
+
+  <label for="mensaje">Mensaje:</label>
+  <textarea id="mensaje" rows="5" required></textarea>
+
+  <button type="submit" class="boton-carrito">Enviar por WhatsApp</button>
+</form>
+
+<script>
+  function enviarWhatsApp() {
+    const nombre = document.getElementById("nombre").value;
+    const email = document.getElementById("email").value;
+    const mensaje = document.getElementById("mensaje").value;
+
+    const texto = `Hola, soy ${nombre} (%0AEmail: ${email})%0A%0A${mensaje}`;
+    const numero = "595981188037"; // ← Tu número sin el "+" ni espacios
+
+    const url = `https://wa.me/${numero}?text=${texto}`;
+    window.open(url, "_blank");
+  }
+</script>
+
+
+  <!-- INFORMACIÓN DE CONTACTO -->
+  <section class="catalogo">
+    <div class="producto">
+      <h3>También podés contactarnos por:</h3>
+      <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/595981188037" target="_blank">+595 981 188 037</a></p>
+      <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/" target="_blank">@badulakes</a></p>
+      <p><i class="fab fa-facebook"></i> Facebook: <a href="https://www.facebook.com/" target="_blank">Badulakes</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-redes">
+  <a href="https://www.instagram.com/badulakesmania.py/?hl=en" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+  <a href="https://wa.me/595981188037" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+</div>
+    <p class="footer-creditos">© 2025 Badulakes. Diseñado por Emmanuel Ynsfran.</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="scripts.js"></script>
+  <script src="carrito.js"></script>
+</body>
+</html>
